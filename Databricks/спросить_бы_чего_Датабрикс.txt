@@ -1,0 +1,113 @@
+Полный список тем, которые могут спросить на интервью по Databricks
+
+1. Основы Databricks
+Что такое Databricks и чем он отличается от традиционного Apache Spark?
+Какие основные компоненты Databricks?
+Как работает Databricks Lakehouse Platform?
+Разница между Databricks Community Edition и Enterprise.
+
+2. Архитектура Databricks
+Как устроена архитектура Databricks?
+Что такое Databricks Runtime?
+Как Databricks работает на AWS, Azure, GCP?
+Разница между Standard, Premium и Enterprise Edition.
+Разница между Shared, Single Node и High Concurrency Clusters.
+
+3. Кластеры в Databricks
+Как создать кластер в Databricks?\
+Разница между interactive cluster и job cluster.\
+Что такое Cluster Policies?\
+Что такое Auto Scaling и как он работает?\
+Как происходит управление ресурсами и распределение задач?\
+Что такое Photon Engine в Databricks?\
+
+4. Databricks Notebooks
+* Как создать и запустить Databricks Notebook?
+* Какие языки программирования поддерживаются в ноутбуках?
+* Как работает Magic Commands (%sql, %python, %r, %scala, %sh)?
+* Как организовать автоматизацию выполнения ноутбуков?
+* Как происходит совместная работа с ноутбуками?
+
+5. Apache Spark в Databricks
+Основы Apache Spark.
+Что такое Spark Session и Spark Context?
+Разница между RDD, DataFrame и Dataset.
+Как происходит кэширование данных в Spark?
+Разница между Spark SQL и PySpark.
+Оптимизация работы Spark в Databricks.
+
+6. Delta Lake и Data Lakehouse
+Что такое Delta Lake?
+Разница между Parquet, Delta и ORC.
+Как работают ACID-транзакции в Delta Lake?
+Как использовать Time Travel в Delta Lake?
+Что такое Delta Change Data Feed (CDC)?
+Как работают Delta Tables и Managed Tables?
+Как оптимизировать Delta Tables (OPTIMIZE, ZORDER, VACUUM)?
+Разница между Delta Lake и Apache Iceberg / Hudi.
+
+7. Databricks SQL
+Как писать SQL-запросы в Databricks?
+Разница между Spark SQL и Databricks SQL.
+Как создавать временные и постоянные таблицы?
+Разница между Managed Table и External Table.
+Как работают Query Execution Plan и Query Profile?
+Как настроить Materialized Views и Cache Tables?
+
+8. ETL и обработка данных
+Как настроить ETL-пайплайны в Databricks?
+Разница между Batch Processing и Streaming Processing.
+Как использовать Auto Loader (CloudFiles) для обработки данных?
+Что такое Databricks Workflows и как автоматизировать задачи?
+Как работают Job Clusters vs Interactive Clusters?
+
+9. Streaming в Databricks (Structured Streaming)
+Как настроить Spark Structured Streaming?
+Разница между Micro-batch processing и Continuous processing.
+Какие есть Trigger Modes?
+Как работают Watermarks и Late Data Handling?
+Как писать данные в Delta Lake в режиме Streaming?
+
+10. Оптимизация производительности в Databricks
+Какие есть методы оптимизации Databricks?
+Как использовать Adaptive Query Execution (AQE)?
+Что такое Broadcast Join и Sort-Merge Join?
+Как работает Z-Ordering в Delta Lake?
+Как настроить Auto Scaling и Cluster Termination?
+Как анализировать Query Execution Plan?
+
+11. Безопасность в Databricks
+Как работает RBAC (Role-Based Access Control)?
+Как настроить Unity Catalog?
+Что такое SCIM (System for Cross-domain Identity Management)?
+Как работает Databricks Secrets Management?
+Разница между Table ACL и Object ACL.
+
+12. Databricks Workflows и CI/CD
+Как настроить Databricks Jobs?
+Что такое Task Orchestration?
+Как использовать Databricks Repos для CI/CD?
+Интеграция Databricks с GitHub и Azure DevOps.
+
+13. Интеграция с облачными сервисами
+Как Databricks интегрируется с AWS (S3, Glue, Redshift)?
+Как Databricks интегрируется с Azure (Blob Storage, ADLS, Synapse)?
+Как подключить Databricks к Snowflake, BigQuery, MySQL, PostgreSQL?
+
+14. Databricks ML & Machine Learning
+Как использовать Databricks MLflow?
+Разница между Managed MLflow и Open-Source MLflow.
+Как настроить Feature Store в Databricks?
+Как развернуть модель машинного обучения в Databricks?
+
+15. Мониторинг и логирование в Databricks
+Как анализировать Spark UI?
+Что такое Ganglia Metrics?
+Как настроить Databricks Log Analytics?
+Как отслеживать Job Runs и Cluster Logs?
+Дополнительные вопросы
+Чем Databricks лучше, чем AWS Glue, EMR, Synapse?
+Как выбрать оптимальную конфигурацию кластера?
+Разница между Databricks и Apache Spark on Kubernetes.
+Как работают Databricks REST API и Databricks CLI?
+Какие best practices для работы в Databricks?
