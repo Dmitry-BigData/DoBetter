@@ -1,0 +1,104 @@
+Полный перечень вопросов по Apache Airflow
+1. Основы Apache Airflow
+Что такое Apache Airflow и зачем он нужен?
+Какие основные компоненты Airflow?
+Чем Airflow отличается от других оркестраторов (Luigi, Prefect, Dagster)?
+Какие задачи решает Airflow?
+Какие недостатки у Airflow?
+2. Архитектура Apache Airflow
+Как устроена архитектура Airflow?
+Что такое Scheduler, Executor, Worker, DAG, Task, XCom, Connections?
+Как работает Scheduler и как часто он запускает задачи?
+Что такое TaskInstance и как он управляется?
+Какие есть методы хранения метаданных в Airflow?
+Как работает backfilling (запуск DAG задним числом)?
+Как Airflow масштабируется в кластере?
+3. DAG (Directed Acyclic Graph)
+Что такое DAG в Airflow?
+Как создать простой DAG?
+Как настроить зависимости между задачами (Task Dependencies)?
+Как работают Trigger Rules?
+Какие есть опции ретраев и таймаутов?
+Как запустить DAG по расписанию (cron, timedelta, dataset scheduling)?
+Чем @daily, @hourly и timedelta отличаются от cron?
+Как передавать переменные (Variables) в DAG?
+4. Task и Operator в Airflow
+Что такое Task и Operator в Airflow?
+В чем разница между PythonOperator, BashOperator, DummyOperator и другие?
+Как работает BranchPythonOperator?
+Что такое SubDAGs и когда их использовать?
+Как передавать данные между тасками (XCom, Variables, Context)?
+Как передавать данные между DAGs (TriggerDagRunOperator, ExternalTaskSensor)?
+Как использовать Dynamic Task Mapping?
+5. Airflow Connections и Hooks
+Что такое Airflow Connections?
+Какие встроенные хуки (Hooks) есть в Airflow?
+Как создать свою кастомную Connection?
+Как настроить подключение к AWS, GCP, Snowflake, Postgres, MySQL, S3?
+Как использовать Secret Backends (Vault, AWS Secrets Manager, GCP Secret Manager)?
+6. XCom и передача данных между тасками
+Что такое XCom (Cross-communication) в Airflow?
+Как передавать данные между тасками с помощью XCom.push() и XCom.pull()?
+Что такое XComArg (TaskFlow API) и как он упрощает код DAG?
+Как ограничить размер XCom (cleanup policy, метаданные vs файлы)?
+Как передавать большие данные (S3, Google Cloud Storage, HDFS)?
+7. Executors в Airflow
+Какие есть типы Executors в Airflow?
+SequentialExecutor
+LocalExecutor
+CeleryExecutor
+KubernetesExecutor
+Чем отличается CeleryExecutor от KubernetesExecutor?
+Как настроить CeleryExecutor с Redis и RabbitMQ?
+Как работает KubernetesExecutor и когда его использовать?
+8. Планировщик (Scheduler) и мониторинг
+Как работает Scheduler в Airflow?
+Как часто Scheduler проверяет DAGs?
+Как избежать нагрузки на Scheduler?
+Как использовать параметры catchup и max_active_runs?
+Как мониторить производительность DAGs (Prometheus, Grafana, Elasticsearch)?
+9. Логирование и отладка Airflow
+Где хранятся логи в Airflow?
+Как настроить отправку логов в S3, GCS, Elastic Stack?
+Как включить DEBUG-логи для DAG и Scheduler?
+Как дебажить ошибки выполнения тасков?
+Как Airflow обрабатывает зависшие задачи (zombie tasks)?
+10. Безопасность в Apache Airflow
+Как настроить аутентификацию и авторизацию (RBAC, OAuth, LDAP)?
+Как защитить Connection Secrets в Airflow?
+Как ограничить доступ к DAGs для разных пользователей?
+Как настроить HTTPS и TLS для Airflow UI?
+11. CI/CD для Apache Airflow
+Как развернуть DAG в GitOps-стиле (DAGs в Git)?
+Как тестировать DAG с pytest и unittest?
+Как настроить CI/CD (GitHub Actions, Jenkins, GitLab CI/CD, ArgoCD)?
+Как использовать Docker и Kubernetes для деплоя DAGs?
+Как обновлять DAG без перезагрузки Scheduler'а?
+12. Интеграции Airflow
+Как настроить Airflow + AWS (S3, Lambda, Redshift, Glue, EMR)?
+Как настроить Airflow + Google Cloud (BigQuery, GCS, Dataproc)?
+Как подключить Airflow к Snowflake, Databricks, Spark, Kafka?
+Как настроить Airflow с dbt?
+13. Airflow REST API
+Как работает Airflow REST API?
+Как запустить DAG через API-запрос?
+Как получить статус таска через API?
+Как управлять Connections через API?
+Как ограничить доступ к API (Auth, JWT, RBAC, IP Filtering)?
+14. Масштабирование и производительность
+Как масштабировать Airflow в кластере?
+Как оптимизировать использование ресурсов Scheduler и Worker'ов?
+Как настроить Auto Scaling для Worker'ов в Kubernetes?
+Как уменьшить время запуска DAG'ов?
+Как разделить DAGs на разные worker'ы?
+15. Разворачивание Airflow
+Как развернуть Airflow с Docker и Docker Compose?
+Как развернуть Airflow в Kubernetes (Helm, Astronomer, MWAA, Cloud Composer)?
+Как настроить Airflow в продакшене?
+Как выбрать правильную базу данных (PostgreSQL vs MySQL)?
+16. Разное
+Как обновить версию Apache Airflow без даунтайма?
+Как настроить раздельное хранение логов для DAGs?
+Как создать кастомный плагин или Operator в Airflow?
+Как интегрировать Airflow с Terraform?
+Что такое Dataset Scheduling в Airflow 2.4+?
